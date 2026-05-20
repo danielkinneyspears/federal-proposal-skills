@@ -1,3 +1,5 @@
+<p align="center"><img src="images/hero.png" alt="Federal Proposal Skills — a complete Claude-Skills package for the US Federal capture and proposal lifecycle" width="100%"></p>
+
 # Federal Proposal Skills
 
 A complete set of [Claude Skills](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview) for the **US Federal capture and proposal lifecycle**, from the first sources-sought notice to the post-award debrief.
@@ -58,6 +60,8 @@ Skills are grouped by lifecycle phase. Each one runs on its own; they are also d
 ## How the skills work together
 
 The skills share a **pursuit workspace**: one directory per opportunity holding numbered artifact files. Each skill reads what it needs and writes its own. The numbering keeps the pipeline legible and lets you resume a multi-week pursuit without re-explaining context. See [shared/pursuit-workspace.md](shared/pursuit-workspace.md) for the full convention.
+
+<p align="center"><img src="images/pipeline.png" alt="The numbered artifact pipeline: 22 files threaded through four phases (Capture, Development, Review &amp; Submit, Post-submission)" width="720"></p>
 
 ```
 pursuits/<solicitation-id>/
