@@ -1,4 +1,5 @@
 {
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "federal-proposal-skills",
   "owner": {
     "name": "Daniel Kinney-Spears",
@@ -11,7 +12,10 @@
   "plugins": [
     {
       "name": "federal-proposal-skills",
-      "source": "./",
+      "source": {
+        "source": "github",
+        "repo": "danielkinneyspears/federal-proposal-skills"
+      },
       "description": "Twenty-one composable Skills covering capture, proposal development, operations, review, recovery, submission, and post-award debrief for US Federal procurements."
     }
   ]
