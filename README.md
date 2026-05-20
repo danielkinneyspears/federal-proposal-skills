@@ -82,20 +82,39 @@ pursuits/<solicitation-id>/
 
 ## Install
 
-**Claude Code (recommended).** Add this repository as a plugin marketplace, then install the plugin:
+This package targets two distinct surfaces. Pick the one that matches your tool.
+
+### Claude Code (CLI) — full plugin install
+
+In a Claude Code session, run these two commands one at a time (wait for the marketplace add to confirm before running install):
 
 ```
-/plugin marketplace add danielkinneyspears/federal-proposal-skills
+/plugin marketplace add https://github.com/danielkinneyspears/federal-proposal-skills.git
+```
+
+```
 /plugin install federal-proposal-skills@federal-proposal-skills
 ```
 
-**Claude.ai or the Claude API (individual skills).** The skills are designed to be installed *together*. Each `SKILL.md` references the shared knowledge base in [`shared/`](shared/), so a skill folder is **not** self-contained on its own. To use a single skill standalone, build a self-contained package with the bundled shared references inlined:
+Note the explicit `https://` URL with the `.git` suffix. Claude Code's `owner/repo` shorthand defaults to SSH, which fails on machines without GitHub SSH keys configured. The full HTTPS URL avoids that.
+
+To verify or troubleshoot:
+
+```
+/plugin marketplace list        # confirm the marketplace was added
+/plugin                          # browse Discover tab; UI install
+/reload-plugins                  # activate after install
+```
+
+### Claude.ai (web) and the Claude desktop app — per-skill zip upload
+
+Claude.ai and the Claude desktop app do **not** have the plugin-marketplace concept. They support uploading individual skills as zip files. Build a self-contained zip with the shared references inlined, then upload via Settings → Capabilities → Skills:
 
 ```
 scripts/package-skill.sh shredding-solicitations
 ```
 
-This writes `dist/shredding-solicitations.zip` with `shared/` bundled inside the skill and the `../../shared/` paths rewritten. Upload that zip on claude.ai (Settings → Capabilities → Skills) or via the [Skills API](https://platform.claude.com/docs/en/build-with-claude/skills-guide). To package every skill at once, run `scripts/package-skill.sh --all`.
+This writes `dist/shredding-solicitations.zip` with `shared/` bundled inside the skill and the `../../shared/` paths rewritten. To package every skill at once, run `scripts/package-skill.sh --all`. Same zips work for the [Skills API](https://platform.claude.com/docs/en/build-with-claude/skills-guide).
 
 ## Sibling package: `govcon-pursuit-brain` (optional)
 
