@@ -1,0 +1,18 @@
+{
+  "name": "federal-proposal-skills",
+  "owner": {
+    "name": "Daniel Kinney-Spears",
+    "url": "https://github.com/danielkinneyspears"
+  },
+  "metadata": {
+    "description": "Claude Skills for the US Federal capture and proposal lifecycle.",
+    "version": "0.2.1"
+  },
+  "plugins": [
+    {
+      "name": "federal-proposal-skills",
+      "source": "./",
+      "description": "Twenty-one composable Skills covering capture, proposal development, operations, review, recovery, submission, and post-award debrief for US Federal procurements."
+    }
+  ]
+}

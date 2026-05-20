@@ -1,0 +1,21 @@
+{
+  "name": "federal-proposal-skills",
+  "version": "0.2.1",
+  "description": "A wall-to-wall set of Claude Skills for the US Federal capture and proposal lifecycle: bid/no-bid qualification, capture planning, competitive analysis, price-to-win, win strategy, RFI and draft-RFP shaping responses, teaming strategy, solution design, proposal operations management, solicitation shredding and compliance matrices, proposal outlining and drafting, executive summaries, past performance, key personnel, cost narratives, color team reviews, review recovery, submission compliance, orals prep, and debrief analysis.",
+  "author": {
+    "name": "Daniel Kinney-Spears"
+  },
+  "homepage": "https://github.com/danielkinneyspears/federal-proposal-skills",
+  "repository": "https://github.com/danielkinneyspears/federal-proposal-skills",
+  "license": "Apache-2.0",
+  "keywords": [
+    "federal",
+    "govcon",
+    "proposal",
+    "capture-management",
+    "rfp",
+    "compliance-matrix",
+    "shipley",
+    "far"
+  ]
+}

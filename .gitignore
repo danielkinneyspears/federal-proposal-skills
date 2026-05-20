@@ -1,0 +1,15 @@
+# Pursuit workspaces — never commit live opportunity data.
+# These often contain source-selection-sensitive or proprietary material.
+pursuits/
+*.pursuit/
+
+# Built standalone skill packages
+dist/
+
+# Evaluation run results
+evaluations/results/
+
+# Local scratch
+.DS_Store
+*.tmp
+scratch/
