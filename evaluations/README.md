@@ -9,6 +9,10 @@ One file per skill, `evaluations/<skill-name>.md`, containing at least three
 evaluation scenarios. Synthetic fixture files, if any, go in
 `evaluations/fixtures/`.
 
+For a package-level view of scenario counts, fixture use, output coverage,
+validation coverage, and anti-behavior coverage, see
+[`coverage-matrix.md`](coverage-matrix.md).
+
 ## Evaluation format
 
 Each evaluation file holds three or more scenarios in this structure:

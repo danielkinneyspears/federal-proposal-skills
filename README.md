@@ -15,6 +15,8 @@ Federal business development runs on a disciplined, gated lifecycle (the model m
 ## The lifecycle and the skills
 
 Skills are grouped by lifecycle phase. Each one runs on its own; they are also designed to chain through a shared [pursuit workspace](shared/pursuit-workspace.md).
+For a discovery-oriented mapping of skills to canonical jobs, common names,
+inputs, and outputs, see [docs/skill-metadata-crosswalk.md](docs/skill-metadata-crosswalk.md).
 
 ### Phase 1: Capture (pre-RFP)
 
