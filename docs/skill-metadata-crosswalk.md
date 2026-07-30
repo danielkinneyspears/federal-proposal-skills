@@ -1,6 +1,6 @@
 # Skill Metadata Crosswalk
 
-This crosswalk maps the package's 21 skills to a compact discovery vocabulary:
+This crosswalk maps the package's 22 skills to a compact discovery vocabulary:
 
 - `phase`
 - `canonical_job`
@@ -47,6 +47,7 @@ Post-submission.
 | `writing-past-performance` | `create` | `past-performance-volume` | PP write-ups, past performance references, citations volume, relevance narratives | past performance references, Section L/M criteria, CPARS/quality evidence | past performance write-ups |
 | `developing-key-personnel` | `create` | `management-volume-drafting` | key personnel, tailored resumes, staffing qualifications, staffing approach, letters of commitment | resumes, labor category requirements, Section L/M criteria, availability evidence | key personnel resumes and staffing case |
 | `narrating-cost-volumes` | `create` | `cost-and-pricing-volume` | cost volume, price volume, pricing buildup, BOE, cost narrative, cost-realism narrative | pricing model, BOE inputs, technical solution, staffing plan, solicitation cost instructions | cost/price volume narrative |
+| `auditing-commitments` | `iterate` | `commitment-and-obligation-audit` | commitment audit, promise review, obligation review, overcommitting check, "we will"/"shall" review, AI-draft commitment check | draft volumes, compliance matrix, solution design, cost narrative, win strategy | `19-commitment-audit.md` |
 | `reviewing-color-teams` | `iterate` | `evaluator-perspective-review` | Blue Team, Pink Team, Green Team, Red Team, Gold Team, White Glove, mock evaluation, color team review | draft proposal, compliance matrix, Section M, review criteria | color team findings and scores |
 | `running-review-recovery` | `iterate` | `review-recovery` | comment adjudication, recovery, finding closure, correction tracking, recovery dashboard | color team findings, proposal drafts, compliance matrix, assignments | recovery dashboard and closure records |
 | `checking-submission-compliance` | `iterate` | `submission-compliance-check` | final compliance check, final compliance review, production check, page-count check, pre-submission checklist | final volumes, Section L, forms, portal rules, file package | submission checklist and compliance findings |

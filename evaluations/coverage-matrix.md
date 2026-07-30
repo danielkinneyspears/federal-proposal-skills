@@ -1,6 +1,6 @@
 # Evaluation Coverage Matrix
 
-This matrix summarizes the current evaluation coverage across all 21 skills.
+This matrix summarizes the current evaluation coverage across all 22 skills.
 It is an index over the existing evaluation files, not a claim that every
 scenario has passed in a particular model run.
 
@@ -9,8 +9,9 @@ results.
 
 ## Current Baseline
 
-- All 21 skills have evaluation files.
+- All 22 skills have evaluation files.
 - 20 skills have 3 evaluation scenarios.
+- `auditing-commitments` has 6 evaluation scenarios.
 - `reviewing-color-teams` has 4 evaluation scenarios.
 - All skill evaluation files use expected-behavior and anti-behavior sections.
 - The repo has two synthetic fixtures:
@@ -38,6 +39,7 @@ results.
 | `writing-past-performance` | 3 | Scenario-supplied inputs | Past performance write-ups | Relevance mapping, honest problem handling, evidence discipline | Does not fabricate, hide performance problems, or stretch relevance |
 | `developing-key-personnel` | 3 | Scenario-supplied inputs | Key personnel resumes and staffing case | Qualification mapping, missed-minimum detection, availability check | Does not bury misses, imply unavailable staff, or invent qualifications |
 | `narrating-cost-volumes` | 3 | Scenario-supplied inputs | Cost/price volume narrative, BOE rationale | Cost-model boundary, cost-technical consistency, BOE traceability | Does not generate cost numbers or use vague BOE rationale |
+| `auditing-commitments` | 6 | `synthetic-proposal-section.md` plus scenario inputs | `19-commitment-audit.md` | Stronger-than-required detection and delta pricing, absolutes, unfunded numbers, volunteered scope, omitted conditions, no-rewrite boundary | Does not rewrite the draft, soften silently, or treat NONE FOUND as a gap in the audit |
 | `reviewing-color-teams` | 4 | `synthetic-proposal-section.md` | Color team findings, scores, Green Team review output | Section M scoring, deficiency classification, review-vs-rewrite boundary, cost-volume review | Does not rewrite instead of review or soften real deficiencies |
 | `running-review-recovery` | 3 | Scenario-supplied inputs | Recovery dashboard, finding closure records | Deficiency prioritization, verification before closure, escalation of unworkable window | Does not close findings without verification or hide schedule impossibility |
 | `checking-submission-compliance` | 3 | `synthetic-proposal-section.md` plus final-package scenario inputs | Submission checklist and compliance findings | Page/format checks, price leakage detection, mechanics/deadline verification | Does not miss misplaced price info or assume portal mechanics are fine |
