@@ -3,6 +3,41 @@
 All notable changes to this package are documented here. Format loosely follows
 [Keep a Changelog](https://keepachangelog.com/); versions follow semantic versioning.
 
+## [0.3.0] — unreleased
+
+Adds commitment auditing. A proposal is a binding offer, and the pack had no
+skill that inventoried what the draft actually obligates the offeror to do.
+This matters more now that drafts are frequently AI-assisted: generated prose
+overcommits substantially more than human prose, and it does so in one
+direction, because fluent future-tense verbs read as confidence.
+
+### Added
+- **`auditing-commitments` skill** — extracts every candidate obligation from a
+  draft, maps each to the requirement behind it, prices the delta where the
+  promise is stronger than required, and tests supportability against the
+  solution design and cost narrative. Produces `19-commitment-audit.md`.
+- **`scripts/scan_commitments.py`** — deterministic scan for commitment verbs,
+  absolutes, numbers carrying a unit, and filler. Reports counts, line numbers
+  and obligations per 250 words so a full volume and a single section are
+  comparable. Standard library only, `--json` for machine use.
+- **`references/commitment-patterns.md`** — the eight recurring overcommitment
+  patterns, what each sounds like in a draft, and the defensible form. The
+  defensible form is almost never "promise less"; it is "state the conditions."
+- **`templates/commitment-audit.md`** — the commitment register, plus ranked
+  lists for stronger-than-required, unsupported, unmeasurable, and volunteered
+  scope, and a conditions register.
+- **`evaluations/auditing-commitments.md`** — six evals covering the stronger
+  promise, the absolute, the unfunded number, volunteered scope, omitted
+  conditions, and the guardrail against silently rewriting the draft.
+
+### Notes
+- Artifact number `19` places the audit immediately before the color-team
+  artifacts in the twenties, which is where it belongs in the lifecycle: after
+  drafting, before review.
+- The skill does not edit the proposal. Softening a commitment on the author's
+  behalf hides the decision they need to make, and is how a real differentiator
+  gets quietly deleted.
+
 ## [0.2.1] — unreleased
 
 Sibling-pointer release. Adds a discoverable mention of the wiki-native

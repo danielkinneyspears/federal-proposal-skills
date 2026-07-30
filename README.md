@@ -48,6 +48,7 @@ inputs, and outputs, see [docs/skill-metadata-crosswalk.md](docs/skill-metadata-
 
 | Skill | What it does |
 |---|---|
+| ✅ `auditing-commitments` | Audits the draft for the obligations it creates; flags promises stronger than the requirement, prices the delta, and lists what the solution does not support. |
 | ✅ `reviewing-color-teams` | Runs Blue, Pink, Green, Red, Gold, and White Glove reviews, including a Red Team that scores the draft as a source-selection evaluator would. |
 | ✅ `running-review-recovery` | Turns color team findings into assigned, completed, and verified corrections; produces a recovery burn-down. |
 | ✅ `checking-submission-compliance` | Final production check: page limits, format rules, required forms/reps/certs, file-naming, portal mechanics. |
