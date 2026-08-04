@@ -6,7 +6,7 @@ A complete set of [Claude Skills](https://platform.claude.com/docs/en/agents-and
 
 Most published proposal skills stop at "shred the RFP and draft some sections." That covers the mechanical middle of the job and skips the parts that decide wins: bid/no-bid discipline, capture planning, price-to-win, win-theme development, evaluator-perspective reviews, and submission compliance. This package covers the **whole lifecycle**, and it is built specifically for federal procurements governed by the FAR: Sections L and M, the Uniform Contract Format, color team reviews, FAR Part 15 source selection, and IDIQ/task-order fair opportunity.
 
-> **Status: v0.2.1.** All twenty-one lifecycle skills are complete, with reference files, templates, and evaluation scenarios. See [CHANGELOG.md](CHANGELOG.md). The package has not yet been exercised on real solicitations end to end; treat v0.2.1 as ready for review and field testing.
+> **Status: v0.3.0.** All twenty-two lifecycle skills are complete, with reference files, templates, and evaluation scenarios. See [CHANGELOG.md](CHANGELOG.md). The package has not yet been exercised on real solicitations end to end; treat v0.2.1 as ready for review and field testing.
 
 ## Why this exists
 
